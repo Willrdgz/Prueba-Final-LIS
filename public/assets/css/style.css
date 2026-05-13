@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #1f2937;
+}
+
+.topbar {
+    background: #111827;
+    color: #fff;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbar span {
+    display: block;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.topbar nav {
+    display: flex;
+    gap: 14px;
+}
+
+.topbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: min(1100px, 94%);
+    margin: 32px auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.login-card,
+.form-card {
+    max-width: 460px;
+    margin: 60px auto;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+p {
+    margin-top: 0;
+    color: #64748b;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+}
+
+button,
+.button {
+    display: inline-block;
+    border: 0;
+    background: #2563eb;
+    color: #fff;
+    padding: 11px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+button:hover,
+.button:hover {
+    background: #1d4ed8;
+}
+
+.button.secondary {
+    background: #64748b;
+}
+
+.danger {
+    background: #dc2626;
+    margin-top: 0;
+    padding: 8px 12px;
+}
+
+.danger:hover {
+    background: #b91c1c;
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+.alert.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background: #f8fafc;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    color: #64748b;
+    padding: 24px;
+}
+
+@media (max-width: 700px) {
+    .topbar,
+    .section-header,
+    .actions,
+    .form-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
